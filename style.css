@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  background-color: #A5B99C;
+}
+h1 {
+  color: black;
+  margin-top: 0;
+}
+h3 {
+  color: black;
+  margin-top: 0;
+}
+h2,
+h4,
+h5,
+h6 {
+  color: white;
+  margin-top: 0;
+}
+p {
+  color: white;
+}
+
+
+/********** HEADER & FOOTER *********/
+#logo img {
+  width: 90px;
+  text-align: left;
+  justify-content: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  top: 55px;
+  animation-name: fadein;
+  animation-duration: 5s;
+  overflow: hidden;
+  position: fixed;
+}
+.fadein {
+    animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #445A3E;
+  color: white;
+  text-align: center;
+}
+
+
+/********** SOCIAL ICONS *********/
+.social_icons {
+  padding: 10px;
+  margin: 5px 5px;
+  text-align: center;
+}
+.social_icons a img{
+  height: 30px;
+  width: auto;
+}
+
+
+/********** HEADER STYLING *********/
+.header-1 {
+  padding: 335px;
+  text-align: center;
+  background-image: url("http://meganelndn.com/KEA/84542.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-2 {
+  padding: 335px;
+  text-align: center;
+  color: white;
+  background-image: url("http://meganelndn.com/KEA/84542.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-3 {
+  padding: 335px;
+  text-align: center;
+  color: white;
+  background-image: url("http://meganelndn.com/KEA/84542.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-4 {
+  padding: 335px;
+  text-align: center;
+  color: white;
+  background-image: url("http://meganelndn.com/KEA/84542.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/********** NAVIGATION *********/
+.topnav ul {
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #445A3E;
+  background-blend-mode: lighten;
+}
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+li:last-child {
+  border-right: 1px solid #bbb;
+  float: right;
+}
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: white;
+  color: black;
+}
+.active {
+  background-color: white;
+  color: black;
+}
+
+/********** IMAGES *********/
+.responsive {
+  width: 100%;
+  height: auto;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+
+/********** HOME PAGE *********/
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.column-one, .column-two, .column-three, .column-four, .column-five, .column-six {
+  padding: 40px;
+  text-align: center;
+}
+.column-one {
+  background-color: #445A3E;
+  border-right: 3px solid whitesmoke;
+}
+.column-two {
+  background-color: #445A3E;
+  border-right: 3px solid whitesmoke;
+}
+.column-three {
+  background-color: #445A3E;
+}
+.column-four {
+  background-color: #445A3E;
+}
+.column-five {
+  background-color: #A5B99C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.column-six {
+  background-color: #445A3E;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.position {
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  background-color: #A5B99C;
+  margin: 5px 0 5px 0;
+}
+
+
+/********** CONTACT BUTTON & CONTAINER *********/
+#btn {
+  background-color: inherit;
+  box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2);
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  float: left;
+  width: 50%;
+  padding: 40px;
+  justify-content: center;
+  border: 1px solid white;
+}
+#btn:hover {
+  background-color: white;
+  color: black;
+}
+.contact {
+  padding: 10%;
+  text-align: left;
+  background-color: #A5B99C;
+  transform: rotateX(-90deg);
+  transform-origin: top;
+  height: 0;
+}
+section {
+  perspective: 1000px;
+  perspective-origin: top;
+}
+#contactform {
+  padding: 30px 0;
+}
+.message-btn {
+  margin-top: 1.5em;
+  display: inline-block;
+  width: auto;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+.message-btn:hover {
+  background-color: black;
+  color: white;
+}
+.hide {
+  display: none;
+}
+.show {
+  animation: open .65s forwards;
+  display: block;
+  height: auto;
+}
+@keyframes open {
+  50% {
+    transform: rotateX(30deg);
+  }
+
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+input, label{
+    display: block;
+}
+.input-styled{
+    margin: 3px 0 10px 0;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
+.request{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin: 3px 0 0 0;
+    max-width: 100%;
+    min-height: 40px;
+    min-width: 100%;
+}
+input, textarea{
+    border-style: none;
+}
+
+
+/********** CONTACT PAGE *********/
+.contact-page {
+  text-align: center;
+  padding-top: 40vh;
+}
+
+
+/********** PORTFOLIO *********/
+.portfolio-container {
+  display: grid;
+  grid-template-areas: "basicweb basicanimation" "basiccontent basicux";
+  grid-template-columns: 1fr 1fr;
+}
+.basic_web {
+  grid-area: basicweb;
+  background-color: #445A3E;
+  padding: 5vw;
+  text-align: center;
+  color: white;
+}
+.basic_content {
+  grid-area: basiccontent;
+  background-color: #A5B99C;
+  padding: 5vw;
+  text-align: center;
+  color: black;
+}
+.basic_animation {
+  grid-area: basicanimation;
+  background-color: #A5B99C;
+  padding: 5vw;
+  text-align: center;
+  color: white;
+}
+.basic_UX {
+  grid-area: basicux;
+  background-color: #445A3E;
+  padding: 5vw;
+  text-align: center;
+  color: black;
+}
+.portfolio_buttons {
+  text-align: center;
+}
+.button {
+  box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: inherit;
+  border: 2px solid white;
+  color: white;
+  padding: 20px 40px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {
+  background-color: #333333;
+}
+.button3 {
+  background-color: #333333;
+}
+.button4 {
+  background-color: #333333;
+  color: white;
+}
+.button5 {
+  background-color: #555555;
+}
+
+/* button responsive */
+
+@media screen and (max-width: 600px) {
+  .button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+
+/********** TIMELINE *********/
+.cvheading {
+  background-color: #A5B99C;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.content {
+  padding: 20px 30px;
+  background-color: #f1f1f1;
+  position: relative;
+  border-radius: 6px;
+}
+.title {
+  background-color: #A5B99C;
+  color: white;
+  padding: 30px 0 10px 0;
+  text-align: center;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #445A3E;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: #A5B99C;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: whitesmoke;
+  border: 4px solid black;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid grey;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent grey;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid grey;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent grey transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #445A3E;
+  position: relative;
+  border-radius: 15px;
+}
+
+/* Responsive timeline */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+  padding-left: 70px;
+  padding-right: 25px;
+  width: 100%;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid grey;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent grey transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+
+  /* Full-width containers */
+    .container {
+    padding-left: 70px;
+    padding-right: 25px;
+    width: 100%;
+    }
+
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+    left: 60px;
+    border: medium solid grey;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent grey transparent transparent;
+    }
+
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+
+  /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 30px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+/********** ´MEDIA QUERIES *********/
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 850px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive home page grid */
+@media screen and (max-width:600px) {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+  }
+  .column-one {
+    border-right: none;
+  }
+  .column-two, .column-three {
+    border-top: 3px solid white;
+    border-right: none;
+  }
+}
+@media screen and (max-width:850px) {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+  }
+  .column-one {
+    border-right: none;
+  }
+  .column-two, .column-three {
+    border-top: 3px solid white;
+    border-right: none;
+  }
+}
+@media screen and (max-width:600px) {
+  .row-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+  }
+}
+@media screen and (max-width:850px) {
+  .row-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+  }
+}
+/* Responsive contact button */
+@media screen and (max-width: 600px) {
+  #btn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  #btn {
+    width: 100%;
+  }
+}
+
+/* Responsive portfolio grid */
+@media screen and (max-width:600px) {
+  .portfolio-container {
+    grid-template-areas: "basicweb" "basicanimation" "basicux" "basiccontent";
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .portfolio-container {
+    grid-template-areas: "basicweb" "basicanimation" "basicux" "basiccontent";
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Responsive headers */
+@media screen and (max-width: 600px) {
+  .header-1, .header-2, .header-3, .header-4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    flex-direction: column;
+    background-size: cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header-1, .header-2, .header-3, .header-4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    flex-direction: column;
+    background-size: cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
